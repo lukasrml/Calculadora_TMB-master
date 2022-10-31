@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Calcular TMB</title>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href="static\styles\calcula.css">
+    <link rel="shortcut icon" href="static\img\icone.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h2>O que é metabolismo basal afinal?</h2>
+    <p>A quantidade de energia (em kcal) necessária a ser consumida para manter seu corpo funcionando com todas as funções vitais saudáveis.</p>
+    <div class="quadrado">
+        <form action="/calcular" method="post">
+            <!--Fomulario para o usuario colocar as informaçãos para o calculo do metabolismo basal-->
+
+            <h1>Olá, {{nome}}</h1>
+
+            Homem: <input type="radio" name="sexo" value="h" CHECKED/>
+            Mulher: <input type="radio" name="sexo" value="m"/><br>
+
+            Peso [Kg]: <input type="number" name="peso" min="0" required; autofocus><br>
+            Altura [cm]: <input type="number" name="altura" min="0" required><br>
+            
+            <label for="atv">Nível de Atividade:</label>
+                <select name="atv">
+                    <option value="sedentario">Sedentário</option>
+                    <option value="leve">Leve</option>
+                    <option value="moderado">Moderado</option>
+                    <option value="alto">Alto</option>
+                    <option value="extremo">Extremo</option>
+                </select>
+
+            <input type="submit" value="Calcular"><br>
+
+            Taxa Metabólica Basal estimada: {{tbme}} <br>
+            <br>
+            
+            Quantidade de kcal que devem ser consumidas para:<br>
+
+            <ul>
+                <li>Perder peso: {{pp}}</li>
+                <li>Ganhar peso: {{gp}}</li>
+            </ul>
+            <!--Tabela de informação calorica de alguns alimentos comuns-->
+            <table>
+                <tr>
+                  <th>  Alimento  </th>
+                  <th>  Quantidade  </th>
+                  <th>  Valor Calórico [kcal]  </th>
+                </tr>
+                <tr>
+                    <td>Aveia</td>
+                    <td>100g</td>
+                    <td>246</td>
+                </tr>
+                <tr>
+                  <td>Arroz</td>
+                  <td>100g</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Batata Doce</td>
+                  <td>100g</td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <td>Batata Inglesa <i class="em em-flag-england" aria-role="presentation" aria-label="England Flag"></i></td>
+                  <td>100g</td> 
+                  <td>86</td>
+                </tr>
+                <tr>
+                  <td>Banana</td>
+                  <td>1 un.</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>Carne Bovina</td>
+                  <td>100g</td>
+                  <td>135</td>
+                </tr>
+                <tr>
+                  <td>Feijão</td>
+                  <td>100g</td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <td>Frango</td>
+                  <td>100g</td>
+                  <td>160</td>
+                </tr>
+                <tr>
+                  <td>Leite</td>
+                  <td>100ml</td>
+                  <td>44</td>
+                </tr>
+                <tr>
+                  <td>Macarrão</td>
+                  <td>100g</td>
+                  <td>124</td>
+                </tr>
+                <tr>
+                  <td>Ovo</td>
+                  <td>1 un.</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <td>Pão Francês <i class="em em-flag-cp" aria-role="presentation" aria-label="Clipperton Island Flag"></i> </td>
+                  <td>1 un.</td>
+                  <td>155</td>
+                </tr>
+                <tr>
+                  <td>Tapioca</td>
+                  <td>100g</td>
+                  <td>240</td>
+                </tr>
+                <tr>
+                  <td>Tilápia</td>
+                  <td>100g</td>
+                  <td>96</td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+</html>

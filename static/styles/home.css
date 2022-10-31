@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    
+}
+body {
+    height: 100vh;
+    font-size: 10px;
+    text-align: center;
+    background: linear-gradient(150deg, lightblue, lightgreen,lightblue);
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado {
+    width:450px;
+    height:360px;
+    background-color:rgba(94, 149, 94, 0.437);
+    border-radius: 2px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    margin: auto;
+    text-align:left;
+    padding: 25px;
+    size: large;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 200;
+}
+p {
+    font-size: 34px;
+    line-height: 0px;
+}
+p1 {
+    line-height: 0px;
+    font-size: 28px;
+}
+input, button {
+    background: transparent;
+    border-width: 1px;
+}
+button {
+    width: 120px;
+    height: 28px;
+    font-size: 18px;
+}
+input[type=submit] {
+    line-height: 5px;
+    width: 100px;
+    height: 25px;
+    font-size: 18px;
+}
+input[type=email] {
+    width: 300px;
+    font-size: 20px;
+    margin-left: 11px;
+}
+input[type=password] {
+    font-size: 20px;
+    width: 150px;
+}

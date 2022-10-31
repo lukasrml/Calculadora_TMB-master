@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Novo login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel= "stylesheet" type= "text/css" href="static\styles\criar_login.css">
+    <link rel="shortcut icon" href="static\img\icone.png" type="image/x-icon">
+</head>
+<body>
+    <br>    
+    <h1>Crie sua conta</h1>
+    <br>
+    <div class="quadrado">
+        <!--Fomulario para o usuario colocar as informaçãos do login que deseja criar-->
+        <form action="/registrar" method="post">
+
+            Digite seu email: <input type="email" name="email" required; autofocus><br>
+            Diga seu nome: <input type="text" name="nome" required><br>
+            Mês e ano de nascimento: <input type="month" name="nascimento" min={{mini}} max={{maxi}} required><br>
+            Escolha uma senha: <input type="password"  name="senha1" class="senha1" required><br>
+            Digite a senha novamente: <input type="password" name="senha2" required><br>
+            
+            <input type="submit" value="Criar">
+
+            {{erro}}
+            
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel= "stylesheet" type= "text/css" href="static\styles\home.css">
+    <link rel="shortcut icon" href="static\img\icone.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Bem-vindo a sua calculadora de Taxa de Metabolismo Basal</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="quadrado">
+    
+        <p>Faça seu login</p>
+        <!--Fomulario para o usuario colocar as informaçãos de seu login-->
+        <div class="login">
+            <form action="/logar" method="post">
+                    Email: <input type="email" name="email" required autofocus><br>
+                    Senha: <input type="password" name="senha" required><br>
+                    
+                    <input type="submit" id="botao" value="Entrar">
+
+                    {{erro}}   
+        </div>
+        </form>
+        <!--Botão para levar o usario para página de criação de login-->
+        <div class="clogin">
+            <form action="/criarlogin" method="post">
+                <br>
+                <p1>Primeira vez? Crie sua conta para seguir</p1>
+                <br>
+                <button>Criar conta</button>
+        </div>           
+        </form>
+    </div>
+</body>
+</html>
